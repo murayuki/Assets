@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assets Pages</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        font-family: Consolas, Monaco;
+    }
+
+    html, body {
+        height: 100%;
+        background-color: rgb(65, 104, 91);
+        color: rgba(156,163,175, 1);
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main {
+        height: 120px;
+        display: grid;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 350px;
+        height: 60px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .typing {
+        height: 1.25em;
+        border-right: 1px solid transparent;
+        animation: typing 3.0s steps(15, end);
+        word-break: break-all;
+        overflow: hidden;
+        color: #73ff96;
+    }
+
+    .flicker {
+        animation: flicker 1.45s step-end infinite;
+    }
+
+    @keyframes flicker {
+        from, to { opacity: 0; }
+        50% { opacity: 1; }
+    }
+
+    @keyframes typing {
+        0% { width: 0; }
+        100% { width: 9.5em; }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        Public
+        <div class="box">
+            <div class="typing">
+                Assets Pages <span class="flicker">...</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
