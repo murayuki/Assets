@@ -1,0 +1,62 @@
+ <h1 id="palworldserversettingeditor">Palworld Server Setting Editor</h1>
+<h1 id="readmeenglishreadme_enmd"><a href="./README_EN.md">README (English)</a></h1>
+<h3 id="">為了讓自己方便修改設定所製作，可能有些代碼不太友好</h3>
+<h3 id="-1">需要請自取, 當然我不能保證不會有錯誤, 目前自己測試是正常的</h3>
+<h3 id="releaselatesthttpsgithubcommurayukipalworldsettingtoolsreleaseslatest"><a href="https://github.com/murayuki/Palworld-SettingTools/releases/latest">發布 Release (Latest)</a></h3>
+<h1 id="-2">注意事項</h1>
+<blockquote>
+  <h5 id="0120"><strong>遊戲版本: <code>0.1.2.0+</code> (除官方修改變數)</strong></h5>
+  <p>所有帶有 <code>_EN</code> 的 <code>json</code>  翻譯都來自 <code>ChatGPT</code></p>
+</blockquote>
+<ul>
+<li><p><strong>A01:</strong></p></li>
+<li><p><strong>如果是需要英文備註請將 <code>data_EN.json</code> 重新命名為 <code>data.json</code></strong></p></li>
+<li><p><strong>A02:</strong></p></li>
+<li><p><strong>請自行選擇語言文件 <code>I18n.json</code>/<code>I18n_EN.json</code></strong></p></li>
+<li><p><strong>如果沒有請自行翻譯只要檔案名稱是 <code>I18n.json</code> 即可</strong></p></li>
+<li><h5 id="-6"><strong>更新資訊</strong></h5></li>
+<li><p>新增 紀錄上次開啟文件路徑 (程式自動生成 ini 設定文件用於紀錄)</p></li>
+<li><p>變更 <code>Remark</code> 文件記錄方式轉為 <code>data</code>並修改資料結構</p></li>
+<li><p>新增 <code>判定輸入類型</code> 輸入錯誤彈出提示</p></li>
+<li><p>新增 顯示 <code>預設值</code> 以及 <code>可調整範圍</code> </p>
+<ul>
+  <li>可調整範圍如果需要<code>更大數值</code>請自行修改 <code>data</code> 文件</li></ul></li>
+</ul>
+<h1 id="-3">功能</h1>
+<ul>
+  <li><h5 id="-7"><strong>介面化修改變量數值</strong></h5></li>
+  <li><h5 id="palworldsettingsini"><strong>讀取 <code>PalWorldSettings.ini</code> 文件進行編輯</strong></h5></li>
+  <li><h5 id="palworldsettingsini-1"><strong>介面排序 <code>PalWorldSettings.ini</code> 文件中變量</strong></h5></li>
+  <li><h5 id="-8"><strong>將變量標註備註說明</strong></h5>
+  <p><img src="./Images/img03.png" alt="img03" /></p></li>
+  <li><h5 id="-9">圖片功能介紹</h5></li>
+  <li><p><strong>(1) 數值編輯框</strong></p></li>
+  <li><p><strong>(2) 開啟上次開啟文件</strong></p></li>
+  <li><p><strong>(3) 讀取文件 (請直接選擇 <code>PalWorldSettings.ini</code> 所在目錄即可自動獲取)</strong></p></li>
+  <li><p><strong>(4) 已讀取文件狀態, 如果編輯錯誤可以直接重新讀取原數值</strong></p></li>
+  <li><p><strong>(5) 關閉文件 (不保存)</strong></p></li>
+  <li><p><strong>(6) 保存文件並關閉文件</strong></p></li>
+</ul>
+<h1 id="-4">圖片介紹</h1>
+<p><img src="./Images/img01.png" alt="img01" /></p>
+<p><img src="./Images/img02.png" alt="img02" /></p>
+<h1 id="-5">資料來源</h1>
+<h4 id="datajson"><strong>關於 <code>data.json</code>文件中的備註資料下列</strong></h4>
+<ul>
+<li><p><a href="https://tech.palworldgame.com/optimize-game-balance">Palworld tech guide - Optimize game balance (palworldgame.com)</a></p></li>
+<li><p><a href="https://forum.gamer.com.tw/C.php?bsn=71458&snA=227">【討論】伺服器參數難度調整分享 @幻獸帕魯 哈啦板 - 巴哈姆特 (gamer.com.tw)</a></p></li>
+<li><p><strong>特別感謝 <a href="https://home.gamer.com.tw/daniel6505">DANIEL6505</a> 巴哈版網友的分享<code>整理</code>和<code>測試</code></strong></p></li>
+<li><p><a href="https://forum.gamer.com.tw/C.php?bsn=71458&snA=466">【情報】伺服器參數表 (附單機模式對照) @幻獸帕魯 哈啦板 - 巴哈姆特 (gamer.com.tw)</a></p></li>
+<li><p><strong>感謝 <a href="https://home.gamer.com.tw/jorden2895">jorden2895 (Jiaa)</a> 巴哈版網友 整理的<code>對照表</code></strong></p></li>
+<li><p><a href="https://forum.gamer.com.tw/C.php?bsn=71458&snA=661">【密技】手把手教學，如何提升Dedicated Server據點帕魯數量上限的方法。（在系統預設範圍內） @幻獸帕魯 哈啦板 - 巴哈姆特 (gamer.com.tw)</a></p></li>
+<li><p>關於 BaseCampWorkerMaxNum 目前不能超過 <code>20</code></p></li>
+<li><p>感謝 <a href="https://home.gamer.com.tw/ivan880613">ivan880613</a> 巴哈版網友 <code>圖文教學</code></p>
+<ul>
+  <li>原始來自 <a href="https://steamcommunity.com/app/1623730/discussions/0/4132683013933660878/">Dedicated Server - Increase Pal Base Worker limit? :: Palworld / 幻獸帕魯 綜合討論 (steamcommunity.com)</a></li></ul></li>
+  <li><p><strong>所使用依賴來自網路開源資源, 如果需要請自行尋找這邊只列出我還記得的來源出處的</strong></p></li>
+  <li><p><a href="https://github.com/Bunny83/SimpleJSON">Bunny83/SimpleJSON: A simple JSON parser in C# (github.com)</a></p></li>
+  <li><p><strong><u>當然對於無法列出處的依賴感到非常抱歉</u></strong></p></li>
+</ul>
+<blockquote>
+  <h5 id="licensegpl30license">LICENSE <code>GPL-3.0 license</code></h5>
+</blockquote>
